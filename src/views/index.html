@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/custom.css">
+    <!-- js -->
+    <script src="../script/script.js" defer></script>
+</head>
+
+<body class="font-main bg-bodyBg overflow-x-hidden">
+    <!-- site header start -->
+    <header class="site-header py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between">
+                <!-- logo -->
+                <a class="site-logo" href="./index.html">
+                    <img class="block h-auto" width="110" height="18" src="../images/logo.svg" alt="Manage's Logo">
+                </a>
+
+                <!-- hamburger -->
+                <button class="hamburger-btn grid gap-1 md:hidden" id="hamburgerBtn" aria-label="Toggle navigation"
+                    aria-controls="primaryNavigation">
+                    <span class="line w-6 h-1 bg-darkBlue-100 transition"></span>
+                    <span class="line w-6 h-1 bg-darkBlue-100 transition"></span>
+                    <span class="line w-6 h-1 bg-darkBlue-100 transition"></span>
+                </button>
+
+                <!-- navigation -->
+                <nav class="primary-navigation fixed top-24 left-5 right-5 hidden mx-auto py-10 bg-white-100 sm:left-20 sm:right-20 md:static md:p-0 md:bg-bodyBg md:m-0 md:block"
+                    id="primaryNavigation">
+                    <ul class="navigation-list flex flex-col justify-center items-center gap-6 md:flex-row md:gap-3">
+                        <li>
+                            <a class="navigation-link font-bold text-darkBlue-100" href="#">
+                                Pricing
+                            </a>
+                        </li>
+                        <li>
+                            <a class="navigation-link font-bold text-darkBlue-100" href="#">
+                                Product
+                            </a>
+                        </li>
+                        <li>
+                            <a class="navigation-link font-bold text-darkBlue-100" href="#">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a class="navigation-link font-bold text-darkBlue-100" href="#">
+                                Careers
+                            </a>
+                        </li>
+                        <li>
+                            <a class="navigation-link font-bold text-darkBlue-100" href="#">
+                                Community
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- get started button -->
+                <button
+                    class="hidden py-3 px-7 text-white-100 font-bold rounded-3xl bg-darkRed-100 transiti hover:bg-darkRed-200 md:block">Get
+                    started</button>
+            </div>
+        </div>
+    </header>
+    <!-- site header end -->
+
+    <!-- main content start -->
+    <main>
+        <!-- hero section start -->
+        <section class="hero mb-24 lg:pt-36 lg:pb-11">
+            <div class="container mx-auto">
+                <!-- wrapper -->
+                <div class="flex flex-col-reverse md:flex-row md:gap-10 ">
+                    <!-- hero text content -->
+                    <div
+                        class="grid place-items-center place-content-center max-w-500 mx-auto md:place-items-start md:m-0 md:text-left">
+                        <h1 class="font-bold text-center text-4xl text-darkBlue-100 md:mb-4 md:text-left lg:6xl">Bring
+                            everyone
+                            together to build
+                            better products.</h1>
+                        <p class="font-light text-center text-darkBlue-100 mb-7 opacity-50 md:text-left">Manage makes it
+                            simple for
+                            software teams to
+                            plan day-to-day tasks while keeping the larger team goals in view.</p>
+
+                        <!-- get started button -->
+                        <button
+                            class="py-3 px-7 text-white-100 font-bold rounded-3xl bg-darkRed-100 transiti hover:bg-darkRed-200">Get
+                            started</button>
+                    </div>
+                    <!-- hero image -->
+                    <img class="mx-auto" src="../images/illustration-intro.svg" width="318" height="286"
+                        alt="hero image">
+                </div>
+            </div>
+        </section>
+        <!-- hero section end -->
+
+        <!-- features section start -->
+        <section class="features" id="features">
+            <div class="container mx-auto">
+                <div class="grid 2xl:grid-flow-col">
+                    <div class="max-w-500 mx-auto mb-14 md:m-0">
+                        <h2 class="mb-3 font-extrabold text-center text-3xl text-darkBlue-100 md:text-left lg:mb-6">
+                            What's different about Manage
+                        </h2>
+                        <p class="text-center text-darkBlue-100 opacity-50 md:text-left">Manage provides all the
+                            functionality your
+                            team needs, without the complexity. Our software is tailor-made for modern digital product
+                            teams.
+                        </p>
+                    </div>
+                    <!-- numbered list items -->
+                    <ul class="numbered-list grid gap-12 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-1">
+                        <li class="numbered-item max-w-400 mx-auto 2xl:m-0">
+                            <div
+                                class="numbered-item-header flex gap-4 items-center w-screen overflow-hidden mb-2 bg-light-100 md:w-auto md:bg-opacity-0">
+                                <span
+                                    class="inline-block px-6 py-3 rounded-full font-bold text-center text-white-100 bg-darkRed-100">
+                                    01
+                                </span>
+                                <h3 class="numbered-item-title text-darkBlue-100 font-bold">
+                                    Track company-wide progress
+                                </h3>
+                            </div>
+                            <p class="font-light text-darkBlue-100 mb-7 opacity-50">See how your day-to-day tasks fit
+                                into the wider vision. Go from tracking progress at the milestone level all the way done
+                                to the smallest of details. Never lose sight of the bigger picture again.</p>
+                        </li>
+                        <li class="numbered-item max-w-400 mx-auto 2xl:m-0">
+                            <div
+                                class="numbered-item-header flex gap-4 items-center w-screen overflow-hidden mb-2 bg-light-100 md:w-auto md:bg-opacity-0">
+                                <span
+                                    class="inline-block px-6 py-3 rounded-full font-bold text-center text-white-100 bg-darkRed-100">
+                                    02
+                                </span>
+                                <h3 class="numbered-item-title text-darkBlue-100 font-bold">
+                                    Advanced built-in reports
+                                </h3>
+                            </div>
+                            <p class="font-light text-darkBlue-100 mb-7 opacity-50">Set internal delivery estimates and
+                                track progress toward company goals. Our customisable dashboard helps you build out the
+                                reports you need to keep key stakeholders informed.</p>
+                        </li>
+                        <li class="numbered-item max-w-400 mx-auto 2xl:m-0">
+                            <div
+                                class="numbered-item-header flex gap-4 items-center w-screen overflow-hidden mb-2 bg-light-100 md:w-auto md:bg-opacity-0">
+                                <span
+                                    class="inline-block px-6 py-3 rounded-full font-bold text-center text-white-100 bg-darkRed-100">
+                                    02
+                                </span>
+                                <h3 class="numbered-item-title text-darkBlue-100 font-bold">
+                                    Everything you need in one place
+                                </h3>
+                            </div>
+                            <p class="font-light text-darkBlue-100 mb-7 opacity-50">Stop jumping from one service to
+                                another to communicate, store files, track tasks and share documents. Manage offers an
+                                all-in-one team productivity solution.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- features section end -->
+
+        <!-- article start -->
+        <article class="site-article py-16 bg-darkRed-100">
+            <div class="container mx-auto">
+                <div class="flex flex-col gap-7 text-center md:flex-row md:items-center md:justify-between">
+                    <div class="max-w-500">
+                        <h2 class="font-bold text-white-100 text-4xl text-center md:text-left">Simplify how your team works today.</h2>
+                    </div>
+
+                    <button
+                        class="py-3 px-7 text-darkRed-100 font-bold rounded-3xl bg-white-100">Get
+                        started</button>
+                </div>
+            </div>
+        </article>
+        <!-- article end -->
+    </main>
+    <!-- main content end -->
+</body>
+
+</html>
