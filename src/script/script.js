@@ -7,25 +7,25 @@ const testimonials = [
         name: "Anisha Li",
         quote: "Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.",
         alt: "Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.",
-        image: "../images/carousel-1.png"
+        image: "./carousel-1.png"
     },
     {
         name: "Ali Bravo",
         quote: "We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.",
         alt: "We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.",
-        image: "../images/carousel-2.png"
+        image: "./carousel-2.png"
     },
     {
         name: "Richard Watts",
         quote: "Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!",
         alt: "Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!",
-        image: "../images/carousel-3.png"
+        image: "./carousel-3.png"
     },
     {
         name:"Shanai Gough",
         quote:"Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.",
         alt:"Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.",
-        image:"../images/carousel-4.png"
+        image:"./carousel-4.png"
     }
 ]
 
@@ -72,9 +72,9 @@ $('#carouselContainer').slick({
     variableWidth: true,
     mobileFirst:true,
     autoplay:true,
-    dotsClass:"controls-wrapper absolute w-screen top-full hidden pt-5 lg:flex gap-3 justify-center",
+    dotsClass:"controls-wrapper absolute w-screen top-full flex justify-center gap-1 pt-5 lg:hidden",
     customPaging: (slider, i) => {
-        return "<button class='block lg:hidden' type='button'> <img src='../images/control.svg'> </button>"
+        return "<button class='block lg:hidden' type='button'> <img src='./control.svg' width='15' height='15'> </button>"
     },
     arrows:false,
     draggable:true
