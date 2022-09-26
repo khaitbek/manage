@@ -2,14 +2,17 @@
   "name": "manage",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "browserslist":"> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "watch":"npx tailwindcss -i src/styles/main.css -o src/styles/styles.css --watch"
+    "watch": "npx tailwindcss -i src/styles/main.css -o src/styles/styles.css --watch",
+    "build":"parcel build src/views/index.html",
+    "open":"parcel src/views/index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "parcel": "^2.7.0",
     "tailwindcss": "^3.1.8"
   }
 }
